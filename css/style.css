@@ -1,0 +1,181 @@
+/* LARRIE — minimal cream/black */
+
+:root {
+  --cream: #f7f2e7;
+  --ink: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+header {
+  padding: 2.5rem 1.5rem 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: clamp(90px, 18vw, 140px);
+  height: auto;
+}
+
+nav {
+  margin-top: 1.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom-color: var(--ink);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  gap: 1.5rem;
+}
+
+.tagline {
+  font-size: clamp(1.1rem, 3.5vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  max-width: 34ch;
+  line-height: 1.4;
+}
+
+.coming {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+/* Founders */
+
+.founders {
+  padding: 3rem 1.5rem 4rem;
+  display: flex;
+  justify-content: center;
+  gap: clamp(3rem, 10vw, 6rem);
+  flex-wrap: wrap;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.founder-photo {
+  width: clamp(96px, 20vw, 128px);
+  height: clamp(96px, 20vw, 128px);
+  border-radius: 50%;
+  border: 1px solid var(--ink);
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  letter-spacing: 0.1em;
+}
+
+.founder-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.founder-role {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 540px) {
+  .founders {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+
+/* Gallery */
+
+.gallery {
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--ink);
+}
+
+.video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) {
+  .gallery.multi {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+footer {
+  padding: 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
