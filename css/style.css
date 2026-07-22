@@ -77,6 +77,22 @@ main {
   line-height: 1.4;
 }
 
+.acrostic {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  font-size: clamp(1.4rem, 5vw, 2.1rem);
+  line-height: 1.45;
+  letter-spacing: 0.06em;
+}
+
+.acrostic b {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  font-size: 1.12em;
+}
+
 .coming {
   font-size: clamp(0.8rem, 2.5vw, 1rem);
   letter-spacing: 0.3em;
