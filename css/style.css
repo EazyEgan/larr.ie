@@ -227,6 +227,38 @@ main {
   content: "\00b7\00a0\00a0";
 }
 
+.venue-section + .venue-section {
+  margin-top: 4.5rem;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
+}
+
+.venue-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem 5rem;
+}
+
+.region-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.venue-list.compact {
+  gap: 0.9rem;
+  font-size: 1rem;
+}
+
 footer {
   padding: 1.5rem;
   font-size: 0.75rem;
