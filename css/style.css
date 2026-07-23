@@ -242,7 +242,7 @@ main {
   letter-spacing: 0.35em;
   text-transform: uppercase;
   white-space: nowrap;
-  margin-bottom: 2.25rem;
+  margin-bottom: 3.5rem;
 }
 
 .section-label::before,
@@ -267,7 +267,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .region-label::before {
