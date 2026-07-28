@@ -297,6 +297,34 @@ main {
   font-size: 1rem;
 }
 
+/* Interface */
+
+.shots {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.shot {
+  margin: 0;
+}
+
+.shot figcaption {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ink);
+}
+
 footer {
   padding: 2rem 1.5rem;
   font-size: 0.7rem;
