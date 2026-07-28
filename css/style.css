@@ -227,6 +227,14 @@ main {
   content: "\00b7\00a0\00a0";
 }
 
+.venues-intro {
+  max-width: 44ch;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  margin-bottom: 3.5rem;
+}
+
 .venue-section + .venue-section {
   margin-top: 4.5rem;
 }
