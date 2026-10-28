@@ -94,10 +94,22 @@ main {
   font-size: 1.12em;
 }
 
+.summary {
+  max-width: 46ch;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  text-wrap: balance;
+}
+
 .coming {
   font-size: clamp(0.8rem, 2.5vw, 1rem);
   letter-spacing: 0.3em;
   text-transform: uppercase;
+}
+
+.coming + .coming {
+  margin-top: -0.75rem;
 }
 
 /* Founders */
@@ -140,6 +152,16 @@ main {
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-top: 0.25rem;
+}
+
+.founder-contact {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+}
+
+.founder-contact a {
+  color: var(--ink);
 }
 
 @media (max-width: 540px) {
